@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="Grid_Gallery_Img/img1.jpg" id="fullImg">
+        <span onclick="CloseFullImg()">X</span>
+        <button onclick="prevImage()" class="nav-btn prev-btn">❮ Previous</button>
+        <button onclick="nextImage()" class="nav-btn next-btn">Next ❯</button>
+        <button onclick="downloadImage()" class="download-btn">Download</button>
+    </div>
+    
+    <button onclick="toggleDarkMode()" class="dark-mode-btn">Toggle Dark Mode</button>
+
+    <div class="img-gallery">
+        <img src="Grid_Gallery_Img/img1.jpg" onclick="OpenFullImg(this.src)">
+        <img src="Grid_Gallery_Img/img2.jpg" onclick="OpenFullImg(this.src)">
+        <img src="Grid_Gallery_Img/img3.jpg" onclick="OpenFullImg(this.src)">
+        <img src="Grid_Gallery_Img/img4.jpg" onclick="OpenFullImg(this.src)">
+        <img src="Grid_Gallery_Img/img5.jpg" onclick="OpenFullImg(this.src)">
+        <img src="Grid_Gallery_Img/img6.jpg" onclick="OpenFullImg(this.src)">
+        <img src="Grid_Gallery_Img/img7.jpg" onclick="OpenFullImg(this.src)">
+        <img src="Grid_Gallery_Img/img8.jpg" onclick="OpenFullImg(this.src)">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
